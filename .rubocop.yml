@@ -1,0 +1,26 @@
+require:
+  - rubocop
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  Exclude:
+    - "**/bin/**/*"
+    - "**/db/**/*"
+    - "**/node_modules/**/*"
+    - "**/templates/**/*"
+    - "**/tmp/**/*"
+    - "**/vendor/**/*"
+    - "config/routes.rb"
+    - "config/environments/*"
+    - "app/controllers/providers/registrations_controller.rb"
+    - "app/controllers/providers/sessions_controller.rb"
+    - "app/controllers/admin/sessions_controller.rb"
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
